@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Crypto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-field">
+                    <div class="form-group">
+                        <label>Your email address:</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject Field (Please adhere to the format)</label>
+                        <input type="text" class="form-control" required>
+                        <p id="request_subject_hint">Please refer to this format as an example. [Project's full name] - [Symbol] - [Request, e.g. Add Market, Add cryptoasset/exchange, Update cryptoasset/exchange, update supply]</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Methodology Review</label>
+                        <input type="checkbox" required>
+                        <p>I declare that I have read, understood, and fully agree to the terms and conditions stipulated at.
+                            <a href="#" rel="nofollow">https://coinmarketcap.com/methodology/</a>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Support Terms</label>
+                        <input type="checkbox" required>
+                        <p>I acknowledge that CoinMarketCap reserves the right, in their sole discretion, to determine the suitability of my request for the site. In the event that CoinMarketCap rejects my request, I acknowledge that CoinMarketCap is not
+                            obligated to inform me or provide any reasons for such refusal.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Accuracy Declaration</label>
+                        <input type="checkbox" required>
+                        <p>I declare that the information provided on the form is accurate and complete to the best of my knowledge and that failure to fulfill these requirements may render my request inadmissible.
+                            </a>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Listings Disclaimer</label>
+                        <input type="checkbox" required>
+                        <p>CoinMarketCap listings are always free. Please beware of spoofed emails, fake social accounts, or individuals requesting listing fees. Anyone asking you to pay a fee or tip for getting your project listed on CoinMarketCap is definitely
+                            not sanctioned to do so. We also do not sanction any listing service to assist in the listing application of any cryptoasset project or exchange.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Relationship with the Project</label>
+                        <textarea class="form-control" rows="4" cols="50" required>
+                            </textarea>
+                        <p>Please describe your relationship with the project (e.g. CEO, founder, employee, community member and exchange)
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Project Launch Date</label>
+                        <input type="date" class="form-control" required>
+                        <p>The date the project launched (e.g. token sale, genesis block, formation of company, drafting of business plan) Where possible, provide evidence/links for verification.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Project Name</label>
+                        <input type="text" class="form-control" required>
+                        <p>Please provide the FULL name of the project (e.g. Bitcoin, Ethereum, Ripple, Holochain, Binance, Bittrex).</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Project Ticker/Symbol</label>
+                        <input type="text" class="form-control" required>
+                        <p>(e.g. BTC, ETH, XRP, HOT)</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Cryptoasset Tags - Sector/Categories(multiple)</label>
+                        <select class="form-control">
+                            <option>1</option>
+                        </select>
+                        <p>You may select more than one tag. Doing so would allow users to filter assets by category membership.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>One-liner description</label>
+                        <input type="text" class="form-control" required>
+                        <p>Provide a snappy and concise tagline for the project. E,g, KAVA - A Cross-Chain Platform for Decentralized Finance. Band Protocol - Secure and scalable decentralized oracle for Web3.0. See more examples here: <a href="#">https://research.binance.com/</a></p>
+                    </div>
+                    <div class="form-group">
+                        <label>Detailed Project Description (Cryptoasset)</label>
+                        <textarea class="form-control" rows="4" cols="50" required>
+                            </textarea>
+                        <p>Our data shows that our users spend more time on pages that use descriptions that adhere to this template: <a href="#">https://tinyurl.com/yy2mw9v7</a>. Recommended word count: 450 - 600 words. Provide a detailed description of
+                            your project, which may be used on the asset page (<a href="#" #>https://coinmarketcap.com/currencies/cardano/</a>), Minimize the use of hyperbole, superlatives, and redundant statements (e.g. leading, amazing, best, first
+                            of its kind, state of the art, decentralized blockchain). It should not read like a sales pitch. Focus on factual statements about your project. Write in third-person. Be concise - avoid redundant statements. (e.g. decentralized
+                            blockchain). For example, Launched in [dd/mm/yyyy] by a team based in [country], [project] is a smart contract platform that enables developers to build decentralized applications. See <a href="#">https://coinmarketcap.com/currencies/cardano/</a>.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Platform (e.g. EOS, NEO, Ethereum, proprietary blockchain).</label>
+                        <input type="text" class="form-control" required>
+                        <p>Please specify all token platforms that the asset is currently on. For example, CHZ has ERC20 and BEP20 tokens and is therefore on the Ethereum and Binance blockchains.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Chain Fork(optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Specify the chain/asset that the was project forked from (e.g. Bitcoin Cash was forked from Bitcoin and had the same blocks/history prior to the fork). Not to be confused with project forks. For example, Litecoin was forked from
+                            the Bitcoin source code, but it does not share the same block history. As such, Litecoin is NOT a chain fork of Bitcoin. Where possible, provide evidence/links for verification.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Hashing/Consensus Algorithm(optional)(Multiple)</label>
+                        <select class="form-control">
+                            <option>1</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Team/Backers/Investors</label>
+                        <textarea class="form-control" rows="4" cols="50" required>
+                            </textarea>
+                        <p>Provide a list of key employees, investors, and advisors. Describe their core competencies and past experience/achievements, and explain their involvement in your project. Where possible, provide evidence/links for verification.</a>.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Media Coverage/Awards(optional)</label>
+                        <textarea class="form-control" rows="4" cols="50">
+                            </textarea>
+                        <p>Provide valid URL(s) to articles/references.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Traction/Adoption/Partnerships/MVPs/Apps</label>
+                        <textarea class="form-control" rows="4" cols="50" required>
+                            </textarea>
+                        <p>This can take the form of user growth, partnerships, enterprise/consumer adoption, and roadmap progress. Quantify and qualify your points with concrete and specific examples. Where possible, provide evidence/links for verification.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Country of Origin (where majority of team is located)</label>
+                        <textarea class="form-control" rows="4" cols="50" required>
+                            </textarea>
+                        <p>Please indicate the country where the majority of your team is located. If applicable, please provide a list of countries and indicate the location of your headquarters.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Link to Logo</label>
+                        <input type="text" class="form-control" required>
+                        <p>3 conditions MUST be met: (1) Transparent background; (2) Square (200x200); unequal dimensions will be rejected! (3) PNG format. See <a href="#">https://onlinepngtools.com/create-transparent-png</a> and
+                            <a href="#">https://www.photoresizer.com/</a>.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Website 1</label>
+                        <input type="text" class="form-control" required>
+                        <p>There is data validation for this field. Kindly ensure that your URL conforms to the following format.<a href="#">https://onlinepngtools.com/create-transparent-png</a> and
+                            <a href="#">https://www.website.com</a>.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Website 2(Optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Insert a valid URL</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Annex A - Rich List & Reserve Addresses (Mandatory for Circulating
+                            Supply/Ranking)(optional)</label>
+                        <textarea class="form-control" rows="4" cols="50">
+                            </textarea>
+                        <p>Paste the URL of your completed Annex A Google Sheet here.Please refer to the instructions in Cell A1 of this link and ensure that your submission is in the CORRECT format: <a href="#" class="stretched-link">https://docs.google.com/spreadsheets/d/1ON2o9fZtdj6aa_uaT7ALtGx1VxFnIDUi8-uS-fWji0o/edit#gid=1181839735</a>.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Emission/release schedule(optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Shows the emission/release schedule of the asset over time. See examples - <a href="#">https://skale.network/tokenomics</a>, <a href="#">https://geeq.io/tokenomics/</a>, <a href="#">https://www.orchid.com/oxt</a></p>
+                    </div>
+                    <div class="form-group">
+                        <label>Contract Platform 1</label>
+                        <select class="form-control" required>
+                            <option>-</option>
+                            <option>Ethereum</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>WContract Address 1</label>
+                        <input type="text" class="form-control" required>
+                        <p>Please specify the chain that you are on (e.g. Binance Smart Chain, Ethereum, Heco). Use this format: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 (Ethereum)</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Number of Decimals (Contract Address 1)(optional)</label>
+                        <input type="number" class="form-control">
+                        <p>This is usually found on the explorer page of the asset. See example - <a href="#">https://gyazo.com/7e2b24ca517cd90fd3a36f83d7c0a88f</a></p>
+                    </div>
+                    <div class="form-group">
+                        <label>Block Explorer 1(optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Insert a valid URL with the CONTRACT ADDRESS, e.g. <a href="#">https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599</a>. This is a mandatory field for projects that are already trading on an exchange.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Block Explorer(s) 2, 3, 4, 5 (e.g. Etherscan, Ethplorer)(optional)</label>
+                        <textarea class="form-control" rows="4" cols="50">
+                                </textarea>
+                        <p>Insert a valid URL with the CONTRACT ADDRESS, e.g. <a href="#">https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599</a>. If there is more than 1 explorer URL, please separate each entry with a comma.For example,<br>
+                            <a href="#">https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599</a>,<br>
+                            <a href="#">https://ethplorer.io/address/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599</a>,<br>
+                            <a href="#">https://bscscan.com/token/0xe9e7cea3dedca5984780bafc599bd69add087d56</a>,<br> <a href="#">https://polygonscan.com/token/0xa1428174f516f527fafdd146b883bb4428682737</a>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Source Code (e.g. Github, Gitter)(optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Insert a valid URL.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Whitepaper / Technical Documentation(optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Insert a valid URL.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Announcement (e.g. Bitcointalk)(optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Insert a valid URL.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Message Board 1 (e.g. Blog/Medium)(optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Insert a valid URL.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Message Board(s) 2, 3, 4, 5 (e.g. Blog/Medium)(optional)</label>
+                        <textarea class="form-control" rows="4" cols="50">
+                            </textarea>
+                        <p>
+                            Insert valid URL(s). If there is more than 1 URL, please separate each entry with a comma.>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Twitter</label>
+                        <input type="text" class="form-control">
+                        <p>There is data validation for this field. Kindly ensure that your URL conforms to the following format. <a href="#">https://twitter.com/bitcoin</a></p>
+                    </div>
+                    <div class="form-group">
+                        <label>Redit(Optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Insert a valid URL for a subreddit.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Facebook(optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Insert a valid URL.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Project introduction video(optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Share a link to an introduction video of the project (e.g. YouTube/Vimeo)</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Video Channel (e.g. YouTube)(optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Insert a valid URL</p>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Chat 1 (e.g. Discord, Telegram, Slack, Weibo).(optional)</label>
+                        <input type="text" class="form-control">
+                        <p>There is data validation for this field</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Chat(s) 2, 3, 4, 5 (e.g. Discord, Telegram, Slack, Weibo).(optional)</label>
+                        <textarea class="form-control" rows="4" cols="50">
+                            </textarea>
+                        <p>Insert valid URL(s). If there is more than 1 URL, please separate each entry with a comma.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>LinkedIn(optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Insert a valid URL.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile App 1 (e.g. Google Play store, iTunes store)(optional)</label>
+                        <input type="text" class="form-control">
+                        <p>Insert a valid URL.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile App(s) 2, 3, 4, 5 (e.g. Google Play store, iTunes store)(optional)</label>
+                        <textarea class="form-control" rows="4" cols="50">
+                            </textarea>
+                        <p>Insert valid URL(s). If there is more than 1 URL, please separate each entry with a comma.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Circulating Supply (# of coins that are circulating in the market and in the general
+                            public's hands</label>
+                        <input type="number" class="form-control">
+                        <p>Insert EXACT number of units (e.g. 21000000).</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Total Supply (# of coins in existence right now minus any coins that have been verifiably
+                            burned.)(optional)</label>
+                        <input type="number" class="form-control">
+                        <p>Insert EXACT number of units (e.g. 21000000).</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Max Supply (maximum # of coins that will ever exist in the lifetime of the asset)</label>
+                        <input type="number" class="form-control" value="1">
+                        <p>Insert EXACT number of units (e.g. 21000000).</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>ICO/IEO Start Date(optional)</label>
+                        <input type="date" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>ICO/IEO End Date(optional)</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>ICO/IEO/Launch Price(optional)</label>
+                        <input type="number" class="form-control">
+                        <p>Insert USD Price</p>
+                    </div>
+                    <div class="form-group">
+                        <label>API endpoint that displays ONLY TOTAL SUPPLY as a NUMERICAL value (Type 'NA' if not
+                            applicable)(optional)
+                        </label>
+                        <input type="text" class="form-control">
+                        <p>MUST be in this EXACT format - <a href="#">http://chainz.cryptoid.info/grs/api.dws?q=totalcoins</a>. Total Supply refers to the # of coins in existence right now (minus any coins that have been verifiably burned.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            API endpoint that displays ONLY Circulating Supply as a numerical value(optional)
+                        </label>
+                        <input type="text" class="form-control">
+                        <p>MUST be in this EXACT format - <a href="#">
+                                http://chainz.cryptoid.info/grs/api.dws?q=circulating</a>.Circulating Supply refers to the # of coins that are circulating in the market and in the general public's hands
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>List of CMC-supported exchanges(optional)</label>
+                        <textarea class="form-control" rows="4" cols="50">
+                            </textarea>
+                        <p>Enter NA if not applicable. Provide (i) screenshots (e.g. imgur/gyazo) and (ii) URLs that link directly to the market(s)/pair(s). Separate each URL with a comma. See example -<a href="#">https://www.binance.com/en/trade/BTC_USDT</a>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>[Optional] Are you willing to provide (dofollow) linkbacks to CMC?</label>
+                        <select class="form-control">
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                        <p>8 out of 10 applicants are willing to do so. Please see: <a href="#">https://gyazo.com/d76a8f1d7293bf9155b57d617c9b6efc</a>. To understand what 'dofollow' means, please see: <a href="#">https://blog.alexa.com/dofollow-vs-nofollow-links/</a></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>ICO Page Application(optional)</label>
+                        <input type="checkbox">
+                        <p>If you are keen to be featured on our ICO page, kindly bookmark this page and apply here AFTER you have been listed on CMC - <a href="#">https://docs.google.com/forms/d/e/1FAIpQLSdplHeL6_N63URP0uiAJeA-z8GKfZHzbCOsoGmk6SxqhS1aiQ/viewform</a></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>SRD Application</label>
+                        <input type="checkbox" required>
+                        <p>Are you an official representative of the project? If so, please sign up for our self-reporting dashboard to manage certain fields on your coin detail pages. Kindly follow the steps outlined here to complete the onboarding process.
+                            <br><a href="#">https://docs.google.com/presentation/d/1p0-EjHE4ELpLZ8kwzP855L5x3uq941oUpCfIYSraa0g/edit#slide=id.g8830a96fa9_0_1349</a> </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Proof/Supporting evidence/documents</label>
+                        <textarea class="form-control" rows="4" cols="50" id="editor" required>
+                            </textarea>
+                        <p>Provide proof (e.g. imgur, gyazo) that the request is authentic (e.g. info is reflected on website, announcement thread, twitter page, etc.). Please ensure that the requested updates match what is found on the project’s website/social
+                            media accounts. If the request entails changing the project’s website, please explain why the team is unable to get the original URL to redirect to the new website. Type 'NA' if not applicable.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Attachments(optional)</label>
+                        <input type="file" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <button class="button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+<script>
+    tinymce.init({
+        selector: 'textarea#editor',
+        menubar: false
+    });
+</script>
+
+</html>
