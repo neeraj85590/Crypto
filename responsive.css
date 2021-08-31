@@ -1,4 +1,10 @@
 @media (max-width:1199px) {
+    body {
+        padding-bottom: 46px;
+    }
+    .btn-theme {
+        padding: 0 22px;
+    }
     .menu li {
         margin-right: 5px;
     }
@@ -194,6 +200,10 @@
 }
 
 @media (max-width: 768px) {
+    .company-team__item,
+    .company-team__item:nth-child(4n) {
+        width: 47%;
+    }
     /* single-iocs */
     .icoinfo-left {
         width: 100%;
@@ -435,6 +445,55 @@
 }
 
 @media (max-width: 600px) {
+    .company-team__item,
+    .company-team__item:nth-child(4n) {
+        width: 100%;
+    }
+    .milestones__item:nth-child(2n+1) {
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 25px;
+        border-right: none;
+        border-left: 2px dotted #ccd1e0;
+    }
+    .milestones__item {
+        margin: 0;
+        width: 100%;
+    }
+    .milestones__item:nth-child(2n+1):before {
+        left: 0;
+        right: auto;
+        margin-left: -13.5px;
+        margin-right: 0;
+    }
+    .milestones__item:nth-child(2n+1) .milestones__date {
+        text-align: left;
+    }
+    .milestones__item {
+        padding-bottom: 10px;
+    }
+    .milestones__item {
+        padding-bottom: 10px;
+    }
+    .milestones,
+    .milestones-btn {
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+    .airdrop-top {
+        flex-wrap: wrap;
+    }
+    .top__time {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .airdrop-top__item {
+        font-size: 12px!important;
+        margin-bottom: 10px;
+    }
+    .airdrop-top__number {
+        font-size: 16px!important;
+    }
     .form-field p a {
         word-wrap: break-word
     }
