@@ -2065,6 +2065,7 @@ footer {
     border-radius: 10px;
     width: 100%;
     border-bottom: 3px solid #eceef3;
+    color: #9db864;
 }
 
 .ico-rating__title,
@@ -2124,6 +2125,7 @@ footer {
     font-size: 12px;
     color: #979abb;
     font-family: var(--fontfamily);
+    margin: 0 0 10px 10px;
 }
 
 .ico-rating__title,
@@ -2149,6 +2151,7 @@ footer {
 .banner-telegram img {
     display: block;
     width: 100%;
+    border-radius: 5px;
 }
 
 .swimm-menu {
@@ -2698,6 +2701,7 @@ footer {
     display: block;
     border: 0;
     background-position: 0 0;
+    width: 12.5%;
 }
 
 .widget .ui-slider-handle {
@@ -2718,6 +2722,7 @@ footer {
     height: 18px;
     cursor: default;
     touch-action: none;
+    left: 12.5%;
 }
 
 .widget__size .wsi {
@@ -2799,4 +2804,111 @@ a.nft {
     word-wrap: break-word;
     color: #004b23;
     background-color: #70e000;
+}
+
+.looksicos {
+    background: linear-gradient(180deg, #edeff4, #f9f8f7);
+}
+
+.widget_s img,
+.widget_h img {
+    height: 125px;
+    width: 100%;
+}
+
+.my-class h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.company-team__item .posts {
+    color: black;
+}
+
+.number1 {
+    color: #748bd9;
+}
+
+.number2 {
+    color: #ecae79;
+}
+
+.number3 {
+    color: #00ad75;
+}
+
+.block__item1 {
+    line-height: 26px;
+}
+
+.widget_align {
+    text-align: center
+}
+
+.visit_website {
+    float: left;
+    padding: 10px 10px 0 20px;
+    text-align: left;
+}
+
+.visit_description {
+    font-size: 10pt
+}
+
+.add-to-wishlist {
+    float: left;
+    padding: 30px 0;
+}
+
+a.facebook {
+    color: #3b5998;
+}
+
+a.twitter {
+    color: #0084b4;
+}
+
+a.telegram {
+    color: #0088cc;
+}
+
+a.reddit {
+    color: #5f99cf;
+}
+
+a.medium {
+    color: #00ab6c;
+}
+
+a.youtube {
+    color: #f61c0d;
+}
+
+.outer-ring {
+    float: left;
+    padding: 0px 30px 0 0;
+}
+
+.inner-ring {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    padding: 0 10px;
+    border: 2px solid #3b4c85;
+    background: #3b4c85;
+    overflow: hidden;
+}
+
+.sif_thumbnail {
+    width: 100px;
+    height: 56px;
+    padding: 22px 0 0 0;
+    overflow: hidden;
+}
+
+.sif_thumbnail img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
