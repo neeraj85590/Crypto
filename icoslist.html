@@ -1,66 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Crypto</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+    <title>Crypto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-  <section class="b-icoList b-icoList_inner" id="list">
-    <div class="icoList">
-        <div class="b-icoTop">
-            <div class="container">
-                <div class="icoTop">
-                    <div class="icoTop__selects">
-                        <form id="form-filters" action="" method="get">
-                            <input type="hidden" name="platform" value="" disabled="" autocomplete="off">
-                            <input type="hidden" name="status" value="" disabled="" autocomplete="off">
-                            <input type="hidden" name="sort" value="started-desc" autocomplete="off">               
-                            <div class="jq-selectbox jqselect icoTop__select icoTop__select_two" id="filter-category-styler">
-                              <select id="filter-category" class="icoTop__select icoTop__select_two" autocomplete="off">
+    <!-- Header Start -->
+    <div class="topBanner2">
+        <a href="#" target="_blank">
+        </a>
+    </div>
+    <div class="header-stats-bg">
+        <div class="container">
+            <div class="header-stats">
+                <div class="header-stats-left">
+                    <div class="header-stats__item"> <strong>BTC</strong> $ 36,837.91 <span data-position="up">2.7923%</span></div>
+                    <div class="header-stats__item"> <strong>ETH</strong> $ 2,652.46 <span data-position="up">8.34448%</span></div>
+                    <div class="header-stats__item"> <strong>MARKET CAP</strong> $ 1638 bln <span data-position="up">4.9%</span></div>
+                    <div class="header-stats__item"> <strong>ICOs</strong> 7,096</div>
+                </div>
+                <div class="header-stats-right">
+                    <a href="#">Submit ICO /</a>
+                    <a href="#">Airdrop</a>
+                    <a href="#" class="promotion">★ Get Promotion</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="headerMain">
+        <div class="container">
+            <div class="header">
+                <a class="gamb js-gamb" href="javascript:void(0);">
+                    <span> </span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <div class="gambHidden js-gambHidden">
+                    <a class="gambHidden__link nft" itemprop="url" href="#" target="_blank">NFTs</a>
+                    <a class="gambHidden__link" href="#">Projects</a>
+                    <a class="gambHidden__link" href="#">DeFi</a>
+                    <a class="gambHidden__link" href="#">Airdrops</a>
+                    <a class="gambHidden__link" href="#">STOs</a>
+                    <a class="gambHidden__link promotion" href="#">Promotion</a>
+                    <a class="gambHidden__link" href="#">Marks news</a>
+                    <a class="gambHidden__link" href="#">Watchlist (0)</a>
+                </div>
+                <a class="search-mob js-searchMob" href="javascript:void(0);">
+                    <i class="fa fa-search"></i>
+                </a>
+                <a class="logo" href="/">
+                    <h3>Logo</h3>
+                </a>
+                <ul class="menu">
+                    <li><a class="menu__link nft" itemprop="url" href="#" target="_blank">NFTs</a></li>
+                    <li><a class="menu__link" itemprop="url" href="#">Projects</a></li>
+                    <li><a class="menu__link" itemprop="url" href="#">★ DeFi</a></li>
+                    <li><a class="menu__link" itemprop="url" href="#">Airdrops</a></li>
+                    <li><a class="menu__link" itemprop="url" href="#">STOs</a></li>
+                    <li>
+                        <a class="menu__link promotion" itemprop="url" href="#">★ Promotion</a>
+                    </li>
+                    <li><a class="menu__link" itemprop="url" href="#">Marks news</a></li>
+                    <li>
+                        <form class="sp-form-fields-wrapper">
+                            <div class="input-group">
+                                <input type="email" class="sp-form-control " placeholder="Enter your email">
+
+                                <button class="btn-theme" type="submit">Subscribe</button>
+
+                            </div>
+                        </form>
+                    </li>
+                    <li>
+                        <a class="favoriteLink" href="#">
+                            <span>0</span><i class="fa fa-bookmark"></i></a>
+                    </li>
+                </ul>
+                <form class="search js-searchBlock" action="/search" method="get">
+                    <input name="q" class="search__input js-search ui-autocomplete-input" type="text" placeholder="Search ICOs / Airdrops / Blockchain companies" autocomplete="off" value="">
+                    <button class="search__btn">
+         <i class="fa fa-search"></i>
+          </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <section class="b-icoList b-icoList_inner" id="list">
+        <div class="icoList">
+            <div class="b-icoTop">
+                <div class="container">
+                    <div class="icoTop">
+                        <div class="icoTop__selects">
+                            <form id="form-filters" action="" method="get">
+                                <input type="hidden" name="platform" value="" disabled="" autocomplete="off">
+                                <input type="hidden" name="status" value="" disabled="" autocomplete="off">
+                                <input type="hidden" name="sort" value="started-desc" autocomplete="off">
+                                <div class="jq-selectbox jqselect icoTop__select icoTop__select_two focused" id="filter-category-styler">
+                                    <select id="filter-category" class="icoTop__select icoTop__select_two" autocomplete="off">
                                 <option selected="" disabled="">CATEGORY</option>
                                </select>
-                               <div class="jq-selectbox__select">
-                                 <div class="jq-selectbox__select-text">CATEGORY</div>
-                                 <div class="jq-selectbox__trigger">
-                                   <div class="jq-selectbox__trigger-arrow">
+                                    <div class="jq-selectbox__select">
+                                        <div class="jq-selectbox__select-text">CATEGORY</div>
+                                        <div class="jq-selectbox__trigger">
+                                            <div class="jq-selectbox__trigger-arrow">
 
-                                   </div>
-                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="jq-selectbox__dropdown">
+                                        <div class="scroll-wrapper">
+                                            <ul class="scroll-content scroll-scrolly_visible">
+                                                <li class="selected sel disabled"><span></span>CATEGORY</li>
+                                                <li><span></span>AI (494)</li>
+                                                <li><span></span>Art (75)</li>
+                                                <li><span></span>Banking (629)</li>
+                                            </ul>
+                                            <div class="scroll-element scroll-x">
+                                                <div class="scroll-element_outer">
+                                                    <div class="scroll-element_size"></div>
+                                                    <div class="scroll-element_track"></div>
+                                                    <div class="scroll-bar"></div>
+                                                </div>
+                                            </div>
+                                            <div class="scroll-element scroll-y">
+                                                <div class="scroll-element_outer">
+                                                    <div class="scroll-element_size"></div>
+                                                    <div class="scroll-element_track"></div>
+                                                    <div class="scroll-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="jq-selectbox__dropdown" style="width: 213.297px; display: none;">
-                                  <div class="scroll-wrapper" style="position: relative;">
-                                    <ul class="scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
-                                      <li class="selected sel disabled" style="display: none;"><span class="undefined"></span>CATEGORY</li>
-                                      <li style=""><span class="undefined"></span>AI (494)</li>
-                                      <li style=""><span class="undefined"></span>Art (75)</li>
-                                      <li style=""><span class="undefined"></span>Banking (629)</li>
-                                    </ul>
-                                <div class="scroll-element scroll-x">
-                                  <div class="scroll-element_outer">
-                                    <div class="scroll-element_size"></div>
-                                    <div class="scroll-element_track"></div>
-                                    <div class="scroll-bar"></div>
-                                  </div>
-                                </div>
-                                <div class="scroll-element scroll-y">
-                                  <div class="scroll-element_outer">
-                                    <div class="scroll-element_size"></div>
-                                    <div class="scroll-element_track"></div>
-                                    <div class="scroll-bar"></div></div></div></div></div></div>
-                            <div class="jq-selectbox jqselect icoTop__select icoTop__select_two" id="filter-platform-styler"><select id="filter-platform" class="icoTop__select icoTop__select_two" autocomplete="off">
+                                <div class="jq-selectbox jqselect icoTop__select icoTop__select_two focused" id="filter-platform-styler"><select id="filter-platform" class="icoTop__select icoTop__select_two" autocomplete="off">
                                 <option selected="" disabled="">PLATFORM</option>
                                                 
-                                                            </select><div class="jq-selectbox__select"><div class="jq-selectbox__select-text">PLATFORM</div><div class="jq-selectbox__trigger"><div class="jq-selectbox__trigger-arrow"></div></div></div><div class="jq-selectbox__dropdown" style="width: 204.141px; display: none;"><div class="scroll-wrapper" style="position: relative;"><ul class="scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;"><li class="selected sel disabled" style="display: none;"><span class="undefined"></span>PLATFORM</li><li style=""><span class="undefined"></span>Achain</li><li style=""><span class="undefined"></span>Akroma</li><li style=""><span class="undefined"></span>Alogrithm X11</li><li style=""><span class="undefined"></span>Apollo</li><li style=""><span class="undefined"></span>Apollo Hermes Blockchain</li><li style=""><span class="undefined"></span>Aragon</li><li style=""><span class="undefined"></span>Ardor</li><li style=""><span class="undefined"></span>ATAO</li><li style=""><span class="undefined"></span>Baconchain</li><li style=""><span class="undefined"></span>BEXAM</li><li style=""><span class="undefined"></span>Binance Chain</li><li style=""><span class="undefined"></span>Bitcoin</li><li style=""><span class="undefined"></span>Bitcoin/Double</li><li style=""><span class="undefined"></span>BitForex</li><li style=""><span class="undefined"></span>Bitshares</li><li style=""><span class="undefined"></span>Blockchain</li><li style=""><span class="undefined"></span>Blockweave</li><li style=""><span class="undefined"></span>BTC</li><li style=""><span class="undefined"></span>BUMO</li><li style=""><span class="undefined"></span>CNET</li><li style=""><span class="undefined"></span>Coffe</li><li style=""><span class="undefined"></span>Counterparty</li><li style=""><span class="undefined"></span>CryptoKami</li><li style=""><span class="undefined"></span>CryptoNight</li><li style=""><span class="undefined"></span>CryptoNote</li><li style=""><span class="undefined"></span>Custom</li><li style=""><span class="undefined"></span>CyberMiles</li><li style=""><span class="undefined"></span>Dash</li><li style=""><span class="undefined"></span>DECOIN Blockchain</li><li style=""><span class="undefined"></span>DEO Protocol</li><li style=""><span class="undefined"></span>DEXON</li><li style=""><span class="undefined"></span>DPA</li><li style=""><span class="undefined"></span>DPoS</li><li style=""><span class="undefined"></span>Electroneum</li><li style=""><span class="undefined"></span>ENLTE PLATFORM</li><li style=""><span class="undefined"></span>ENTRY</li><li style=""><span class="undefined"></span>EOS</li><li style=""><span class="undefined"></span>Ethereum</li><li style=""><span class="undefined"></span>Ethereum/NEO</li><li style=""><span class="undefined"></span>Ethereum/Polymath</li><li style=""><span class="undefined"></span>Expanse</li><li style=""><span class="undefined"></span>Fiber</li><li style=""><span class="undefined"></span>Filecoin network</li><li style=""><span class="undefined"></span>GoChain</li><li style=""><span class="undefined"></span>Graphene</li><li style=""><span class="undefined"></span>Hedera</li><li style=""><span class="undefined"></span>Helix</li><li style=""><span class="undefined"></span>Hybrid</li><li style=""><span class="undefined"></span>Hypercube</li><li style=""><span class="undefined"></span>Hyperledger</li><li style=""><span class="undefined"></span>Hyperledger Fabric</li><li style=""><span class="undefined"></span>ICON</li><li style=""><span class="undefined"></span>Infinity Blockchain</li><li style=""><span class="undefined"></span>IOTA</li><li style=""><span class="undefined"></span>ISL-Blockchain</li><li style=""><span class="undefined"></span>JPMorganChase</li><li style=""><span class="undefined"></span>Keccak</li><li style=""><span class="undefined"></span>Kickico</li><li style=""><span class="undefined"></span>Komodo</li><li style=""><span class="undefined"></span>Lisk</li><li style=""><span class="undefined"></span>Litecoin</li><li style=""><span class="undefined"></span>MAHRA platform</li><li style=""><span class="undefined"></span>Metaverse Blockchain</li><li style=""><span class="undefined"></span>Monero</li><li style=""><span class="undefined"></span>Multichain</li><li style=""><span class="undefined"></span>Native</li><li style=""><span class="undefined"></span>NEBL</li><li style=""><span class="undefined"></span>Neblio</li><li style=""><span class="undefined"></span>NEM</li><li style=""><span class="undefined"></span>NEO</li><li style=""><span class="undefined"></span>NEP</li><li style=""><span class="undefined"></span>NEP5</li><li style=""><span class="undefined"></span>Neurochain</li><li style=""><span class="undefined"></span>New Blockchain</li><li style=""><span class="undefined"></span>Newton</li><li style=""><span class="undefined"></span>Nilechain</li><li style=""><span class="undefined"></span>Nxt</li><li style=""><span class="undefined"></span>Omni</li><li style=""><span class="undefined"></span>Omnilytics</li><li style=""><span class="undefined"></span>Own</li><li style=""><span class="undefined"></span>Own Platform</li><li style=""><span class="undefined"></span>Pivx</li><li style=""><span class="undefined"></span>Polygon Chain</li><li style=""><span class="undefined"></span>Polymath</li><li style=""><span class="undefined"></span>POS</li><li style=""><span class="undefined"></span>PoW</li><li style=""><span class="undefined"></span>PoW/PoS</li><li style=""><span class="undefined"></span>Promether</li><li style=""><span class="undefined"></span>Proprietary</li><li style=""><span class="undefined"></span>Qovar</li><li style=""><span class="undefined"></span>QRC</li><li style=""><span class="undefined"></span>QTUM</li><li style=""><span class="undefined"></span>Quanta Chain</li><li style=""><span class="undefined"></span>Ripemd160</li><li style=""><span class="undefined"></span>RSK</li><li style=""><span class="undefined"></span>Script</li><li style=""><span class="undefined"></span>Script Hybrid</li><li style=""><span class="undefined"></span>Scrypt</li><li style=""><span class="undefined"></span>SCRYPT POW</li><li style=""><span class="undefined"></span>Scrypto</li><li style=""><span class="undefined"></span>Separate blockchain</li><li style=""><span class="undefined"></span>SHA256</li><li style=""><span class="undefined"></span>SHYFT</li><li style=""><span class="undefined"></span>Slatechain</li><li style=""><span class="undefined"></span>SmartX</li><li style=""><span class="undefined"></span>SpectroCoin</li><li style=""><span class="undefined"></span>ST20</li><li style=""><span class="undefined"></span>Steem</li><li style=""><span class="undefined"></span>Stellar</li><li style=""><span class="undefined"></span>Stellar Asset</li><li style=""><span class="undefined"></span>Stellar Lumens</li><li style=""><span class="undefined"></span>Stellar Token</li><li style=""><span class="undefined"></span>Stratis</li><li style=""><span class="undefined"></span>StreamSpace</li><li style=""><span class="undefined"></span>Tendermint</li><li style=""><span class="undefined"></span>TEZOS</li><li style=""><span class="undefined"></span>ThePower</li><li style=""><span class="undefined"></span>Tomochain</li><li style=""><span class="undefined"></span>TON</li><li style=""><span class="undefined"></span>Tron</li><li style=""><span class="undefined"></span>Trustchain</li><li style=""><span class="undefined"></span>Ubiq</li><li style=""><span class="undefined"></span>UniFox</li><li style=""><span class="undefined"></span>UNIVERSA</li><li style=""><span class="undefined"></span>Unknown</li><li style=""><span class="undefined"></span>VeChain</li><li style=""><span class="undefined"></span>Ventureon</li><li style=""><span class="undefined"></span>Wanchain</li><li style=""><span class="undefined"></span>Waves</li><li style=""><span class="undefined"></span>Webchain</li><li style=""><span class="undefined"></span>X11</li><li style=""><span class="undefined"></span>x13</li><li style=""><span class="undefined"></span>XRP Ledger</li><li style=""><span class="undefined"></span>YouToken</li><li style=""><span class="undefined"></span>Zilliqa</li><li style=""><span class="undefined"></span>Zuum</li></ul><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div></div></div></div>
-                            <div class="jq-selectbox jqselect icoTop__select icoTop__select_two" id="filter-status-styler"><select id="filter-status" class="icoTop__select icoTop__select_two" autocomplete="off">
+                                                            </select>
+                                    <div class="jq-selectbox__select">
+                                        <div class="jq-selectbox__select-text">PLATFORM</div>
+                                        <div class="jq-selectbox__trigger">
+                                            <div class="jq-selectbox__trigger-arrow"></div>
+                                        </div>
+                                    </div>
+                                    <div class="jq-selectbox__dropdown">
+                                        <div class="scroll-wrapper">
+                                            <ul class="scroll-content">
+                                                <li class="selected sel disabled"><span></span>PLATFORM</li>
+                                                <li><span></span>Achain</li>
+                                            </ul>
+                                            <div class="scroll-element scroll-x">
+                                                <div class="scroll-element_outer">
+                                                    <div class="scroll-element_size"></div>
+                                                    <div class="scroll-element_track"></div>
+                                                    <div class="scroll-bar"></div>
+                                                </div>
+                                            </div>
+                                            <div class="scroll-element scroll-y">
+                                                <div class="scroll-element_outer">
+                                                    <div class="scroll-element_size"></div>
+                                                    <div class="scroll-element_track"></div>
+                                                    <div class="scroll-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jq-selectbox jqselect icoTop__select icoTop__select_two focused" id="filter-status-styler"><select id="filter-status" class="icoTop__select icoTop__select_two" autocomplete="off">
                                 <option selected="" disabled="">STATUS</option>
                                                                    
-                                                            </select><div class="jq-selectbox__select"><div class="jq-selectbox__select-text">STATUS</div><div class="jq-selectbox__trigger"><div class="jq-selectbox__trigger-arrow"></div></div></div><div class="jq-selectbox__dropdown" style="display: none;"><div class="scroll-wrapper" style="position: relative;"><ul class="scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;"><li class="selected sel disabled" style="display: none;"><span class="undefined"></span>STATUS</li><li data-icon="circle-upcoming" style=""><span class="circle-upcoming"></span>Upcoming</li><li data-icon="circle-presale_active" style=""><span class="circle-presale_active"></span>Pre-Sale</li><li data-icon="circle-presale_ended" style=""><span class="circle-presale_ended"></span>Pre-Sale Ended</li><li data-icon="circle-active" style=""><span class="circle-active"></span>Active</li><li data-icon="circle-ended" style=""><span class="circle-ended"></span>Ended</li><li data-icon="circle-trading" style=""><span class="circle-trading"></span>Trading</li></ul><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div></div></div></div>
-                            <div class="jq-selectbox jqselect icoTop__select icoTop__select_two" id="filter-sort-styler" style="">
-                              <select id="filter-sort" class="icoTop__select icoTop__select_two" autocomplete="off">
+                                                            </select>
+                                    <div class="jq-selectbox__select">
+                                        <div class="jq-selectbox__select-text">STATUS</div>
+                                        <div class="jq-selectbox__trigger">
+                                            <div class="jq-selectbox__trigger-arrow"></div>
+                                        </div>
+                                    </div>
+                                    <div class="jq-selectbox__dropdown">
+                                        <div class="scroll-wrapper">
+                                            <ul class="scroll-content scroll-scrolly_visible">
+                                                <li class="selected sel disabled"><span></span>STATUS</li>
+                                                <li data-icon="circle-upcoming"><span class="circle-upcoming"></span>Upcoming</li>
+                                                <li data-icon="circle-presale_active"><span class="circle-presale_active"></span>Pre-Sale</li>
+                                                <li data-icon="circle-presale_ended"><span class="circle-presale_ended"></span>Pre-Sale Ended</li>
+                                                <li data-icon="circle-active"><span class="circle-active"></span>Active</li>
+                                                <li data-icon="circle-ended"><span class="circle-ended"></span>Ended</li>
+                                                <li data-icon="circle-trading"><span class="circle-trading"></span>Trading</li>
+                                            </ul>
+                                            <div class="scroll-element scroll-x">
+                                                <div class="scroll-element_outer">
+                                                    <div class="scroll-element_size"></div>
+                                                    <div class="scroll-element_track"></div>
+                                                    <div class="scroll-bar"></div>
+                                                </div>
+                                            </div>
+                                            <div class="scroll-element scroll-y">
+                                                <div class="scroll-element_outer">
+                                                    <div class="scroll-element_size"></div>
+                                                    <div class="scroll-element_track"></div>
+                                                    <div class="scroll-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jq-selectbox jqselect icoTop__select icoTop__select_two focused" id="filter-sort-styler">
+                                    <select id="filter-sort" class="icoTop__select icoTop__select_two" autocomplete="off">
                                 <option selected="" disabled="">SORT BY</option>
                                                                     <option value="started-asc">Start asc</option>
                                                                     <option value="started-desc">Start desc</option>
@@ -69,307 +220,370 @@
                                                                     <option value="rating-asc">Rate asc</option>
                                                                     <option value="rating-desc">Rate desc</option>
                               </select>
-                              <div class="jq-selectbox__select">
-                                <div class="jq-selectbox__select-text">SORT BY</div>
-                                <div class="jq-selectbox__trigger">
-                                  <div class="jq-selectbox__trigger-arrow">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="jq-selectbox__dropdown" style="display: none;">
-                                <div class="scroll-wrapper" style="position: relative;">
-                                  <ul class="scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
-                                    <li class="selected sel disabled" style="display: none;"><span class="undefined"></span>SORT BY</li>
-                                    <li style=""><span class="undefined"></span>Start asc</li>
-                                    <li style=""><span class="undefined"></span>Start desc</li>
-                                    <li style=""><span class="undefined"></span>End asc</li>
-                                    <li style=""><span class="undefined"></span>End desc</li>
-                                    <li style=""><span class="undefined"></span>Rate asc</li>
-                                    <li style=""><span class="undefined"></span>Rate desc</li>
-                                  </ul><div class="scroll-element scroll-x">
-                                    <div class="scroll-element_outer">
-                                      <div class="scroll-element_size"></div>
-                                      <div class="scroll-element_track"></div>
-                                      <div class="scroll-bar"></div>
+                                    <div class="jq-selectbox__select">
+                                        <div class="jq-selectbox__select-text">SORT BY</div>
+                                        <div class="jq-selectbox__trigger">
+                                            <div class="jq-selectbox__trigger-arrow">
+                                            </div>
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="scroll-element scroll-y">
-                                    <div class="scroll-element_outer">
-                                      <div class="scroll-element_size"></div>
-                                      <div class="scroll-element_track"></div>
-                                      <div class="scroll-bar"></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="icoTop__filters">
-                                <div class="icoTop__filtersItem">
-                                    WHITELIST
-                                    <div class="filter__switch ">
-                                        <span></span>
-                                        <input type="hidden" name="whitelist" id="filter-whitelist" value="">
+                                    <div class="jq-selectbox__dropdown">
+                                        <div class="scroll-wrapper">
+                                            <ul class="scroll-content">
+                                                <li class="selected sel disabled"><span></span>SORT BY</li>
+                                                <li><span></span>Start asc</li>
+                                                <li><span></span>Start desc</li>
+                                                <li><span></span>End asc</li>
+                                                <li><span></span>End desc</li>
+                                                <li><span></span>Rate asc</li>
+                                                <li><span></span>Rate desc</li>
+                                            </ul>
+                                            <div class="scroll-element scroll-x">
+                                                <div class="scroll-element_outer">
+                                                    <div class="scroll-element_size"></div>
+                                                    <div class="scroll-element_track"></div>
+                                                    <div class="scroll-bar"></div>
+                                                </div>
+                                            </div>
+                                            <div class="scroll-element scroll-y">
+                                                <div class="scroll-element_outer">
+                                                    <div class="scroll-element_size"></div>
+                                                    <div class="scroll-element_track"></div>
+                                                    <div class="scroll-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="icoTop__filtersItem">
-                                    KYC
-                                    <div class="filter__switch ">
-                                        <span></span>
-                                        <input type="hidden" name="kyc" id="filter-kyc" value="">
+                                <div class="icoTop__filters">
+                                    <div class="icoTop__filtersItem">
+                                        WHITELIST
+                                        <div class="filter__switch ">
+                                            <span></span>
+                                            <input type="hidden" name="whitelist" id="filter-whitelist" value="">
+                                        </div>
+                                    </div>
+                                    <div class="icoTop__filtersItem">
+                                        KYC
+                                        <div class="filter__switch ">
+                                            <span></span>
+                                            <input type="hidden" name="kyc" id="filter-kyc" value="">
+                                        </div>
+                                    </div>
+                                    <div class="icoTop__filtersItem">
+                                        BOUNTY
+                                        <div class="filter__switch ">
+                                            <span></span>
+                                            <input type="hidden" name="bounty" id="filter-bounty" value="">
+                                        </div>
+                                    </div>
+                                    <div class="icoTop__filtersItem">
+                                        MVP
+                                        <div class="filter__switch ">
+                                            <span></span>
+                                            <input type="hidden" name="mvp" id="filter-mvp" value="">
+                                        </div>
+                                    </div>
+                                    <div class="icoTop__filtersItem">
+                                        EMAIL confirmed
+                                        <div class="filter__switch ">
+                                            <span></span>
+                                            <input type="hidden" name="email_confirmed" id="filter-email_confirmed" value="">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="icoTop__filtersItem">
-                                    BOUNTY
-                                    <div class="filter__switch ">
-                                        <span></span>
-                                        <input type="hidden" name="bounty" id="filter-bounty" value="">
-                                    </div>
-                                </div>
-                                <div class="icoTop__filtersItem">
-                                    MVP
-                                    <div class="filter__switch ">
-                                        <span></span>
-                                        <input type="hidden" name="mvp" id="filter-mvp" value="">
-                                    </div>
-                                </div>
-                                <div class="icoTop__filtersItem">
-                                                    EMAIL confirmed
-                                                    <div class="filter__switch ">
-                                                        <span></span>
-                                                        <input type="hidden" name="email_confirmed" id="filter-email_confirmed" value="">
-                                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
+                        <a class="icoTop__sort js-sort active" href="#" data-field="started" data-direction="desc" data-sort="sortDown">START<span class="icoTop__arrow"><span class="icoTop__arrowUp"></span><span class="icoTop__arrowDown"></span></span></a>
+                        <a class="icoTop__sort js-sort" href="#" data-field="ending" data-direction="desc" data-sort="">END<span class="icoTop__arrow"><span class="icoTop__arrowUp"></span><span class="icoTop__arrowDown"></span></span></a>
+                        <a class="icoTop__sort js-sort" href="#" data-field="rating" data-direction="desc" data-sort="">RATE<span class="icoTop__arrow"><span class="icoTop__arrowUp"></span><span class="icoTop__arrowDown"></span></span></a>
                     </div>
-                    <a class="icoTop__sort js-sort active" href="#" data-field="started" data-direction="desc" data-sort="sortDown">START<span class="icoTop__arrow"><span class="icoTop__arrowUp"></span><span class="icoTop__arrowDown"></span></span></a>
-                    <a class="icoTop__sort js-sort" href="#" data-field="ending" data-direction="desc" data-sort="">END<span class="icoTop__arrow"><span class="icoTop__arrowUp"></span><span class="icoTop__arrowDown"></span></span></a>
-                    <a class="icoTop__sort js-sort" href="#" data-field="rating" data-direction="desc" data-sort="">RATE<span class="icoTop__arrow"><span class="icoTop__arrowUp"></span><span class="icoTop__arrowDown"></span></span></a>
                 </div>
             </div>
-        </div>
-        <div class="container">
-           <div class="icoListContent">
-                        <div class="icoListItem icoListItem_favorite">
-                          <div class="icoListItem__img">
+            <div class="container">
+                <div class="icoListContent">
+                    <div class="icoListItem icoListItem_favorite">
+                        <div class="icoListItem__img">
                             <img src="https://icomarks.com/files/companies/79/786917e4c8560a52e68f49886d4536089d88.jpg">
-                          </div>
-                          <div class="icoListItem__info">
+                        </div>
+                        <div class="icoListItem__info">
                             <a class="icoListItem__title" href="/ico/sif-token">SIF TOKEN <sup class="sup_is_premium">★ Promoted</sup>                                                                                                            <sup class="sup_is_airdrop">+ FREE COINS</sup>                                    
                               <sup class="sup_views">3,256 Views</sup></a>
-                              <div class="icoListItem__description">SIF TOKEN is a SIFIRINCIFILO initiative that takes its power from binance smart chain. The purpose of existence is to provide funds for the project and...</div>
-                          </div>
-                          <div class="icoListItem__raised">
-                              <div class="mobile">
+                            <div class="icoListItem__description">SIF TOKEN is a SIFIRINCIFILO initiative that takes its power from binance smart chain. The purpose of existence is to provide funds for the project and...</div>
+                        </div>
+                        <div class="icoListItem__raised">
+                            <div class="mobile">
                                 <a class="icoTop__sort js-sort" data-field="started" data-sort="">STATUS</a>
-                              </div>                            
-                              <span class="circle-active"></span>
-                              <span>Active</span>
-                          </div>
-                          <div class="icoListItem__start">
-                              <div class="mobile">
-                                    <a class="icoTop__sort js-sort" data-sort="">START</a>
-                              </div>16 May 2021
-                          </div>
-                          <div class="icoListItem__end">
+                            </div>
+                            <span class="circle-active"></span>
+                            <span>Active</span>
+                        </div>
+                        <div class="icoListItem__start">
+                            <div class="mobile">
+                                <a class="icoTop__sort js-sort" data-sort="">START</a>
+                            </div>16 May 2021
+                        </div>
+                        <div class="icoListItem__end">
                             <div class="mobile">
                                 <a class="icoTop__sort js-sort" data-sort="">END</a>
                             </div> 11 Oct 2021
-                          </div>
-                          <div class="icoListItem__rate">6.2
-                              <span class="js-circle svg-container" data-p1="10" data-p2="3" data-p3="6.9">
-                                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 194 194" class="circliful">undefined<circle cx="100" cy="100" r="57" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="360" transform="rotate(-90,100,100)"></circle><circle class="circle" id="circle1" data-percent="100" cx="100" cy="100" r="57" fill="none" stroke="#23ae33" stroke-width="4" stroke-dasharray="360, 20000" transform="rotate(-90,100,100)"></circle><circle cx="100" cy="100" r="67" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="422.5" transform="rotate(-90,100,100)"></circle><circle class="circle" id="circle2" data-percent="30" cx="100" cy="100" r="67" fill="none" stroke="#d58c45" stroke-width="4" stroke-dasharray="126.74999999999999, 20000" transform="rotate(-90,100,100)"></circle><circle cx="100" cy="100" r="77" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="485" transform="rotate(-90,100,100)"></circle><circle class="circle" id="circle3" data-percent="69" cx="100" cy="100" r="77" fill="none" stroke="#9db864" stroke-width="4" stroke-dasharray="334.65, 20000" transform="rotate(-90,100,100)"></circle>undefined<text class="timer" text-anchor="middle" x="100" y="113" style="font-size: 22px; undefined;" fill="#aaa"><tspan class="number"></tspan><tspan class="percent"></tspan></text></svg></span>
-                          </div>
-                      </div>
+                        </div>
+                        <div class="icoListItem__rate">6.2
+                            <span class="js-circle svg-container" data-p1="10" data-p2="3" data-p3="6.9">
+                                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 194 194" class="circliful">undefined<circle cx="100" cy="100" r="57" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="360" transform="rotate(-90,100,100)"></circle><circle class="circle" id="circle1" data-percent="100" cx="100" cy="100" r="57" fill="none" stroke="#23ae33" stroke-width="4" stroke-dasharray="360, 20000" transform="rotate(-90,100,100)"></circle><circle cx="100" cy="100" r="67" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="422.5" transform="rotate(-90,100,100)"></circle><circle class="circle" id="circle2" data-percent="30" cx="100" cy="100" r="67" fill="none" stroke="#d58c45" stroke-width="4" stroke-dasharray="126.74999999999999, 20000" transform="rotate(-90,100,100)"></circle><circle cx="100" cy="100" r="77" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="485" transform="rotate(-90,100,100)"></circle><circle class="circle" id="circle3" data-percent="69" cx="100" cy="100" r="77" fill="none" stroke="#9db864" stroke-width="4" stroke-dasharray="334.65, 20000" transform="rotate(-90,100,100)"></circle>undefined<text class="timer" text-anchor="middle" x="100" y="113"  fill="#aaa"><tspan class="number"></tspan><tspan class="percent"></tspan></text></svg></span>
+                        </div>
+                    </div>
 
-                       <div class="icoListItem ">
-                            <div class="icoListItem__img">
-                              <img src="https://icomarks.com/files/companies/66/6554bbe0040dff647f955c263ae8f6f5ed30.png">
-                            </div>
-                            <div class="icoListItem__info">
-                                <a class="icoListItem__title" href="#">Princoin                                                                                                                                                 
+                    <div class="icoListItem ">
+                        <div class="icoListItem__img">
+                            <img src="https://icomarks.com/files/companies/66/6554bbe0040dff647f955c263ae8f6f5ed30.png">
+                        </div>
+                        <div class="icoListItem__info">
+                            <a class="icoListItem__title" href="#">Princoin                                                                                                                                                 
                                   <sup class="sup_views">6,106 Views</sup></a>
-                                <div class="icoListItem__description">PRINCOIN Is a Decentralized Digital Currency. The project includes a Wallet, a Blockchain and an Exchange.
-                                  <br>
-                                  It consists mainly of giving to public the...
-                                </div>
+                            <div class="icoListItem__description">PRINCOIN Is a Decentralized Digital Currency. The project includes a Wallet, a Blockchain and an Exchange.
+                                <br> It consists mainly of giving to public the...
                             </div>
-                            <div class="icoListItem__raised">
-                                <div class="mobile">
-                                    <a class="icoTop__sort js-sort" data-field="started" data-sort="">STATUS</a>
-                                </div>                            
-                                <span class="circle-active"></span>
-                                <span>Active</span>
+                        </div>
+                        <div class="icoListItem__raised">
+                            <div class="mobile">
+                                <a class="icoTop__sort js-sort" data-field="started" data-sort="">STATUS</a>
                             </div>
-                            <div class="icoListItem__start">
-                                <div class="mobile">
-                                    <a class="icoTop__sort js-sort" data-sort="">START</a>
-                                </div> Apr 2021
-                            </div>
-                            <div class="icoListItem__end">
-                                <div class="mobile">
-                                    <a class="icoTop__sort js-sort" data-sort="">END</a>
-                                </div>28 Aug 2021
-                            </div>
-                            <div class="icoListItem__rate">5.5
-                                    <span class="js-circle svg-container" data-p1="10" data-p2="1" data-p3="6.9">
+                            <span class="circle-active"></span>
+                            <span>Active</span>
+                        </div>
+                        <div class="icoListItem__start">
+                            <div class="mobile">
+                                <a class="icoTop__sort js-sort" data-sort="">START</a>
+                            </div> Apr 2021
+                        </div>
+                        <div class="icoListItem__end">
+                            <div class="mobile">
+                                <a class="icoTop__sort js-sort" data-sort="">END</a>
+                            </div>28 Aug 2021
+                        </div>
+                        <div class="icoListItem__rate">5.5
+                            <span class="js-circle svg-container" data-p1="10" data-p2="1" data-p3="6.9">
                                       <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 194 194" class="circliful">undefined<circle cx="100" cy="100" r="57" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="360" transform="rotate(-90,100,100)"></circle>
                                         <circle class="circle" id="circle1" data-percent="100" cx="100" cy="100" r="57" fill="none" stroke="#23ae33" stroke-width="4" stroke-dasharray="360, 20000" transform="rotate(-90,100,100)"></circle>
                                         <circle cx="100" cy="100" r="67" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="422.5" transform="rotate(-90,100,100)"></circle>
                                         <circle class="circle" id="circle2" data-percent="10" cx="100" cy="100" r="67" fill="none" stroke="#b7320e" stroke-width="4" stroke-dasharray="42.25, 20000" transform="rotate(-90,100,100)"></circle>
                                         <circle cx="100" cy="100" r="77" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="485" transform="rotate(-90,100,100)"></circle>
                                         <circle class="circle" id="circle3" data-percent="69" cx="100" cy="100" r="77" fill="none" stroke="#9db864" stroke-width="4" stroke-dasharray="334.65, 20000" transform="rotate(-90,100,100)"></circle>undefined
-                                        <text class="timer" text-anchor="middle" x="100" y="113" style="font-size: 22px; undefined;" fill="#aaa">
+                                        <text class="timer" text-anchor="middle" x="100" y="113"  fill="#aaa">
                                           <tspan class="number">
                                         </tspan>
                                         <tspan class="percent"></tspan>
                                       </text>
                                     </svg>
                                   </span>
-                              </div>
                         </div>
-                        <div class="icoListItem ">
-                            <div class="icoListItem__img">
-                              <img src="https://icomarks.com/files/companies/79/7871cf7b7302b6165f2413eade0ed7725574.jpg">
-                            </div>
-                            <div class="icoListItem__info">
-                                <a class="icoListItem__title" href="#">M2M Systems                                     
+                    </div>
+                    <div class="icoListItem ">
+                        <div class="icoListItem__img">
+                            <img src="https://icomarks.com/files/companies/79/7871cf7b7302b6165f2413eade0ed7725574.jpg">
+                        </div>
+                        <div class="icoListItem__info">
+                            <a class="icoListItem__title" href="#">M2M Systems                                     
                                   <sup class="sup_is_sto">STO</sup>   
                                   <sup class="sup_is_airdrop">+ FREE COINS</sup>                                    
                                   <sup class="sup_views">585 Views</sup>
                                 </a>
-                                <div class="icoListItem__description">M2M Systems is a IoT Contract Platform based on blockchian. The platform allows IoT devices to quickly and effectively communicate, handling identity,...</div>
-                            </div>
-                            <div class="icoListItem__raised">
-                                <div class="mobile">
-                                    <a class="icoTop__sort js-sort" data-field="started" data-sort="">STATUS</a>
-                                </div>                            
-                                <span class="circle-active"></span>
-                                <span>Active</span>
-                            </div>
-                            <div class="icoListItem__start">
-                                <div class="mobile">
-                                    <a class="icoTop__sort js-sort" data-sort="">START</a>
-                                </div>01 July 2021
-                             </div>
-                            <div class="icoListItem__end">
-                                <div class="mobile">
-                                    <a class="icoTop__sort js-sort" data-sort="">END</a>
-                                </div> 30 Aug 2021 
-                              </div>
-                            <div class="icoListItem__rate">  6.9
-                                    <span class="js-circle svg-container" data-p1="10" data-p2="8" data-p3="4.6"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 194 194" class="circliful">undefined<circle cx="100" cy="100" r="57" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="360" transform="rotate(-90,100,100)"></circle><circle class="circle" id="circle1" data-percent="100" cx="100" cy="100" r="57" fill="none" stroke="#23ae33" stroke-width="4" stroke-dasharray="360, 20000" transform="rotate(-90,100,100)"></circle><circle cx="100" cy="100" r="67" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="422.5" transform="rotate(-90,100,100)"></circle><circle class="circle" id="circle2" data-percent="80" cx="100" cy="100" r="67" fill="none" stroke="#83c64e" stroke-width="4" stroke-dasharray="338, 20000" transform="rotate(-90,100,100)"></circle><circle cx="100" cy="100" r="77" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="485" transform="rotate(-90,100,100)"></circle><circle class="circle" id="circle3" data-percent="46" cx="100" cy="100" r="77" fill="none" stroke="#cbbb36" stroke-width="4" stroke-dasharray="223.1, 20000" transform="rotate(-90,100,100)"></circle>undefined<text class="timer" text-anchor="middle" x="100" y="113" style="font-size: 22px; undefined;" fill="#aaa"><tspan class="number"></tspan><tspan class="percent"></tspan></text></svg></span>
-                            </div>
+                            <div class="icoListItem__description">M2M Systems is a IoT Contract Platform based on blockchian. The platform allows IoT devices to quickly and effectively communicate, handling identity,...</div>
                         </div>
-                                    </div>
+                        <div class="icoListItem__raised">
+                            <div class="mobile">
+                                <a class="icoTop__sort js-sort" data-field="started" data-sort="">STATUS</a>
+                            </div>
+                            <span class="circle-active"></span>
+                            <span>Active</span>
+                        </div>
+                        <div class="icoListItem__start">
+                            <div class="mobile">
+                                <a class="icoTop__sort js-sort" data-sort="">START</a>
+                            </div>01 July 2021
+                        </div>
+                        <div class="icoListItem__end">
+                            <div class="mobile">
+                                <a class="icoTop__sort js-sort" data-sort="">END</a>
+                            </div> 30 Aug 2021
+                        </div>
+                        <div class="icoListItem__rate"> 6.9
+                            <span class="js-circle svg-container" data-p1="10" data-p2="8" data-p3="4.6">
+                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 194 194" class="circliful">undefined<circle cx="100" cy="100" r="57" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="360" transform="rotate(-90,100,100)"></circle>
+                                <circle class="circle" id="circle1" data-percent="100" cx="100" cy="100" r="57" fill="none" stroke="#23ae33" stroke-width="4" stroke-dasharray="360, 20000" transform="rotate(-90,100,100)"></circle>
+                                <circle cx="100" cy="100" r="67" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="422.5" transform="rotate(-90,100,100)"></circle>
+                                <circle class="circle" id="circle2" data-percent="80" cx="100" cy="100" r="67" fill="none" stroke="#83c64e" stroke-width="4" stroke-dasharray="338, 20000" transform="rotate(-90,100,100)"></circle>
+                                <circle cx="100" cy="100" r="77" class="border" fill="none" stroke="#dddee6" stroke-width="4" stroke-dasharray="485" transform="rotate(-90,100,100)"></circle>
+                                <circle class="circle" id="circle3" data-percent="46" cx="100" cy="100" r="77" fill="none" stroke="#cbbb36" stroke-width="4" stroke-dasharray="223.1, 20000" transform="rotate(-90,100,100)"></circle>undefined<text class="timer" text-anchor="middle" x="100" y="113"  fill="#aaa"><tspan class="number"></tspan><tspan class="percent"></tspan></text></svg></span>
+                        </div>
+                    </div>
+                </div>
 
-                      <div class="blockCenter">
-                          <a class="btn show-more" href="#" id="show-more">
-                          <svg class="icon icon-down">
+                <div class="blockCenter">
+                    <a class="btn show-more" href="#" id="show-more">
+                        <svg class="icon icon-down">
                             <use xlink:href="#"></use>
                           </svg><span>SHOW MORE</span>
-                        </a>
-                      </div>
+                    </a>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="container">
+            <div class="footerTop">
+                <div class="footerItem">
+                    <div class="footerItem__title">ICOmarks</div>
+                    <ul class="footerItem__list footerItem__list--block">
+                        <li><a class="footerItem__link" href="#">About</a></li>
+                        <li><a class="footerItem__link" href="#">Rating Methodology</a></li>
+                        <li><a class="footerItem__link" href="#">Privacy Policy &amp; Terms</a></li>
+                        <li><a class="footerItem__link" href="#">Media</a></li>
+                        <li><a class="footerItem__link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footerItem">
+                    <div class="footerItem__title">For projects</div>
+                    <ul class="footerItem__list footerItem__list--block">
+                        <li><a class="footerItem__link" href="#">✪ Promotion</a></li>
+                        <li><a class="footerItem__link" href="#">♕ Services</a></li>
+                        <li><a class="footerItem__link" href="#">Submit Project</a>
+                            <a class="footerItem__link" href="#"> / Airdrop</a></li>
+                        <li><a class="footerItem__link" href="#">Get Widget</a></li>
+                        <div class="footerItem__title footerItem__title_margin">For R&amp;D</div>
+                        <ul class="footerItem__list footerItem__list--block">
+                            <li><a class="footerItem__link" href="#">ICOmarks API</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="footerItem">
+                    <div class="footerItem__title">For users</div>
+                    <ul class="footerItem__list footerItem__list--block">
+                        <li><a class="footerItem__link" href="#">Android App</a></li>
+                        <li><a class="footerItem__link" href="#">Legal platform</a></li>
+                        <li><a class="footerItem__link" href="#">Blockchain companies</a></li>
+                        <div class="footerItem__title footerItem__title_margin">Online alert</div>
+                        <ul class="footerItem__list footerItem__list--block">
+                            <li><a class="footerItem__link" href="#">Health stat</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="footerItem">
+                    <div class="footerItem__title">Explore</div>
+                    <ul class="footerItem__list footerItem__list--block">
+                        <li><a class="footerItem__link" href="#">ICO</a></li>
+                        <li><a class="footerItem__link" href="#">IEO</a></li>
+                        <li><a class="footerItem__link" href="#">Airdrops</a></li>
+                        <li><a class="footerItem__link" href="#">Project stats</a></li>
+                        <li><a class="footerItem__link" href="#">Social stat</a></li>
+                        <li><a class="footerItem__link" href="#">Calendar</a></li>
+                        <li><a class="footerItem__link" href="#">Funded</a></li>
+                        <li><a class="footerItem__link" href="#">Marks news</a></li>
+                        <li><a class="footerItem__link" href="#">Report center</a></li>
+                        <li><a class="footerItem__link" href="#">Blockchain companies</a></li>
+                    </ul>
+                </div>
+                <div class="footerItem footer-subscribe">
+                    <div class="footer-subscribe__title">ICOmarks Newsletter</div>
+                    <div class="footer-subscribe__text">Get signals in your email about the most interesting projects and upcoming and active ICOs</div>
+
+                    <form class="sp-form-fields-wrapper">
+                        <div class="input-group">
+                            <input type="email" class="sp-form-control " placeholder="Enter your email">
+
+                            <button class="btn-theme" type="submit">Subscribe</button>
+
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class="footerBottom-block">
+            <div class="container">
+                <div class="footerBottom">
+                    <a class="footerLogo" href="/">
+                        <h4 class="icon icon-logo ">Logo</h4>
+                    </a>
+                    <div class="copir">Rating and stats platform for cryptocurrency ICOs (Initial Coin Offering) © 2017 - 2021 All rights reserved.</div>
+                    <div class="social">
+                        <a class="social__link" href="#" target="_blank">
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                        </a>
+                        <a class="social__link" href="#" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a class="social__link" href="#" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a class="social__link" href="#" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <div class="m-space">
     </div>
-</section>
-<footer>
-  <div class="container">
-  <div class="footerTop">
-  <div class="footerItem">
-  <div class="footerItem__title">ICOmarks</div>
-  <ul class="footerItem__list footerItem__list--block">
-  <li><a class="footerItem__link" href="/about">About</a></li>
-  <li><a class="footerItem__link" href="/rating">Rating Methodology</a></li>
-  <li><a class="footerItem__link" href="/privacy">Privacy Policy &amp; Terms</a></li>
-  <li><a class="footerItem__link" href="/media">Media</a></li>
-  <li><a class="footerItem__link" href="/contact">Contact</a></li>
-  </ul>
-  </div>
-  <div class="footerItem">
-  <div class="footerItem__title">For projects</div>
-  <ul class="footerItem__list footerItem__list--block">
-  <li><a class="footerItem__link" href="/advertising">✪ Promotion</a></li>
-  <li><a class="footerItem__link" href="/services">♕ Services</a></li>
-  <li><a class="footerItem__link" href="/submit">Submit Project</a><a class="footerItem__link" href="/submit-airdrop"> / Airdrop</a></li>
-  <li><a class="footerItem__link" href="/widget">Get Widget</a></li>
-  <div class="footerItem__title footerItem__title_margin" style="margin-bottom:0px;line-height:18px;">For R&amp;D</div>
-  <ul class="footerItem__list footerItem__list--block">
-  <li><a class="footerItem__link" href="/api">ICOmarks API</a></li>
-  </ul>
-  </ul>
-  </div>
-  <div class="footerItem">
-  <div class="footerItem__title">For users</div>
-  <ul class="footerItem__list footerItem__list--block">
-  <li><a class="footerItem__link" href="/app">Android App</a></li>
-  <li><a class="footerItem__link" href="/legalplatform">Legal platform</a></li>
-  <li><a class="footerItem__link" href="/blockchains">Blockchain companies</a></li>
-  <div class="footerItem__title footerItem__title_margin" style="margin-bottom:0px;line-height:18px;">Online alert</div>
-  <ul class="footerItem__list footerItem__list--block">
-  <li><a class="footerItem__link" href="/healthstat">Health stat</a></li>
-  </ul>
-  </ul>
-  </div>
-  <div class="footerItem">
-  <div class="footerItem__title">Explore</div>
-  <ul class="footerItem__list footerItem__list--block">
-  <li><a class="footerItem__link" href="/icos">ICO</a></li>
-  <li><a class="footerItem__link" href="/icos">IEO</a></li>
-  <li><a class="footerItem__link" href="/airdrops">Airdrops</a></li>
-  <li><a class="footerItem__link" href="/stats">Project stats</a></li>
-  <li><a class="footerItem__link" href="/social">Social stat</a></li>
-  <li><a class="footerItem__link" href="/calendar">Calendar</a></li>
-  <li><a class="footerItem__link" href="/funded">Funded</a></li>
-  <li><a class="footerItem__link" href="/marksnews">Marks news</a></li>
-  <li><a class="footerItem__link" href="/reportcenter">Report center</a></li>
-  <li><a class="footerItem__link" href="/blockchains">Blockchain companies</a></li>
-  </ul>
-  </div>
-  <div class="footerItem footer-subscribe">
-  <div class="footer-subscribe__title">ICOmarks Newsletter</div>
-  <div class="footer-subscribe__text">Get signals in your email about the most interesting projects and upcoming and active ICOs</div>                
-  <!-- Subscription Form -->
-  <style>.sp-force-hide { display: none;}.sp-form[sp-id="170860"] { display: block; background: rgba(255, 255, 255, 1); padding: 5px; width: 450px; max-width: 100%; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; font-family: inherit; background-repeat: no-repeat; background-position: center; background-size: auto;}.sp-form[sp-id="170860"] input[type="checkbox"] { display: inline-block; opacity: 1; visibility: visible;}.sp-form[sp-id="170860"] .sp-form-fields-wrapper { margin: 0 auto; width: 440px;}.sp-form[sp-id="170860"] .sp-form-control { background: rgba(233, 233, 236, 1); border-color: rgba(233, 233, 236, 1); border-style: solid; border-width: 1px; font-size: 15px; padding-left: 8.75px; padding-right: 8.75px; border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; height: 35px; width: 100%;}.sp-form[sp-id="170860"] .sp-field label { color: #444444; font-size: 13px; font-style: normal; font-weight: bold;}.sp-form[sp-id="170860"] .sp-button-messengers { border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px;}.sp-form[sp-id="170860"] .sp-button { border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; background-color: rgba(95, 129, 246, 1); color: #ffffff; width: auto; font-weight: 700; font-style: normal; font-family: inherit; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;}.sp-form[sp-id="170860"] .sp-button-container { text-align: left;}</style><div class="sp-form-outer"><div id="sp-form-170860" sp-id="170860" sp-hash="dd4cf799e72be528310d383f6c52d471238b0913aad6a922dbe78254cd5447ca" sp-lang="en" class="sp-form sp-form-regular sp-form-embed sp-form-horizontal" sp-show-options="%7B%22satellite%22%3Afalse%2C%22maDomain%22%3A%22login.sendpulse.com%22%2C%22formsDomain%22%3A%22forms.sendpulse.com%22%2C%22condition%22%3A%22onEnter%22%2C%22scrollTo%22%3A25%2C%22delay%22%3A10%2C%22repeat%22%3A3%2C%22background%22%3A%22rgba(0%2C%200%2C%200%2C%200.5)%22%2C%22position%22%3A%22bottom-right%22%2C%22animation%22%3A%22%22%2C%22hideOnMobile%22%3Afalse%2C%22urlFilter%22%3Afalse%2C%22urlFilterConditions%22%3A%5B%7B%22force%22%3A%22hide%22%2C%22clause%22%3A%22contains%22%2C%22token%22%3A%22%22%7D%5D%2C%22analytics%22%3A%7B%22ga%22%3A%7B%22eventLabel%22%3A%22%D0%A4%D0%BE%D1%80%D0%BC%D0%B0_%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D0%B8_%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F_%D1%84%D0%BE%D1%80%D0%BC%D0%B0_%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D0%B8_%D0%BD%D0%B0_%D1%81%D0%B0%D0%B9%D1%82%D0%B5_icomarks_%D1%81_2020_12_06%22%2C%22send%22%3Afalse%7D%2C%22ym%22%3A%7B%22counterId%22%3Anull%2C%22eventLabel%22%3Anull%2C%22targetId%22%3Anull%2C%22send%22%3Afalse%7D%7D%2C%22utmEnable%22%3Atrue%7D"><div class="sp-form-fields-wrapper"><div class="sp-message"><div></div></div><form novalidate="" class="sp-element-container ui-sortable ui-droppable sp-field-nolabel "><div class="sp-field " sp-id="sp-94064bf4-871f-425b-a43d-dcbc8af9c24a"><label class="sp-control-label"><span>Email</span><strong>*</strong></label><input type="email" sp-type="email" name="sform[email]" class="sp-form-control " placeholder="Your Email" sp-tips="%7B%22required%22%3A%22Required%20field%22%2C%22wrong%22%3A%22Wrong%20email%22%7D" required="required" list="sp-email-options-170860"><datalist id="sp-email-options-170860"></datalist><datalist id="sp-email-options-170860"></datalist></div><div class="sp-field sp-button-container " sp-id="sp-e1cb73e5-227e-427c-85df-40dfde5ccfd8"><button id="sp-e1cb73e5-227e-427c-85df-40dfde5ccfd8" class="sp-button">Subscribe </button></div></form><div class="sp-link-wrapper sp-brandname__left"></div></div></div></div><script type="text/javascript" src="//web.webformscr.com/apps/fc3/build/default-handler.js?1606989158973"></script> 
-  <!-- /Subscription Form -->
-  </div>
-  </div>
-  </div>
-  <div class="footerBottom-block">
-  <div class="container">
-  <div class="footerBottom"><a class="footerLogo" href="/">
-  <svg class="icon icon-logo ">
-  <use xlink:href="/assets/img/spritesvg.svg#logo"></use>
-  </svg>
-  </a>
-  <div class="copir">Rating and stats platform for cryptocurrency ICOs (Initial Coin Offering) © 2017 - 2021 All rights reserved.</div>
-  <div class="social">
-  <a class="social__link" href="https://t.me/ico_marks" target="_blank">
-  <svg class="icon icon-twitter-footer ">
-  <use xlink:href="/assets/img/spritesvg.svg#telegram"></use>
-  </svg>
-  </a>
-  <a class="social__link" href="https://twitter.com/ICO_marks" target="_blank">
-  <svg class="icon icon-twitter-footer ">
-  <use xlink:href="/assets/img/spritesvg.svg#twitter"></use>
-  </svg>
-  </a>
-  <a class="social__link" href="https://www.facebook.com/icomarks" target="_blank">
-  <svg class="icon icon-facebook-footer ">
-  <use xlink:href="/assets/img/spritesvg.svg#facebook"></use>
-  </svg>
-  </a>
-  <a class="social__link" href="https://instagram.com/icomarks" target="_blank">
-  <svg class="icon icon-instagram-footer ">
-  <use xlink:href="/assets/img/spritesvg.svg#instagram"></use>
-  </svg>
-  </a>
-  </div>
-  </div>
-  </div>
-  </div>
-  </footer>
+    <a href="#" target="_blank" class="bottomBanner"></a>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.jq-selectbox').on('touchstart', function() {
+            if ($(this).hasClass('opened')) {
+                $(this).removeClass('changed focused dropdown opened').css({
+                    'z-index': '0'
+                }).find('.jq-selectbox__dropdown').fadeOut(0);
+            } else {
+                $('.jq-selectbox').removeClass('changed focused dropdown opened').css({
+                    'z-index': '0'
+                }).find('.jq-selectbox__dropdown').fadeOut(0);
+                $(this).addClass('focused dropdown opened').css({
+                    'z-index': '100'
+                }).find('.jq-selectbox__dropdown').fadeIn(0);
+            }
+        });
+        $('.jq-selectbox li').on('touchstart', function() {
+            $(this).closest('.jq-selectbox').removeClass('changed focused dropdown opened').css({
+                'z-index': '0'
+            }).find('.jq-selectbox__dropdown').fadeOut(0);
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $(".js-gamb").click(function() {
+                $(".js-searchMob").removeClass("close"), $(".js-searchBlock").removeClass("open"), $(this).hasClass("close") ? ($(this).removeClass("close"), $(".js-gambHidden").removeClass("open"), $("body").css({
+                    "overflow": "visible",
+                    "margin-top": '0px'
+                }), $('.topBanner2').removeClass('fixed'), $('.header').removeClass('fixed')) : ($(".topBanner").length && $("html, body").animate({
+                    scrollTop: 45
+                }, 100), $(this).addClass("close"), $(".js-gambHidden").addClass("open"), $("body").css({
+                    "overflow": "hidden",
+                }), $('.header').addClass('fixed'), $('.topBanner2').addClass('fixed'))
+            }),
+            $(".js-searchMob").click(function() {
+                $(".js-gamb").removeClass("close"), $(".js-gambHidden").removeClass("open"), $(this).hasClass("close") ? ($(this).removeClass("close"), $(".js-searchBlock").removeClass("open"), $("body").css("overflow", "visible"), $('.header').removeClass('fixed')) : ($(".topBanner").length && $("html, body").animate({
+                    scrollTop: 45
+                }, 100), $(this).addClass("close"), $(".js-searchBlock").addClass("open"), $("body").css("overflow", "hidden"), $('.header').addClass('fixed'))
+            });
+        $('.jq-selectbox ').on('click', function() {
+            $('.scroll-content').css({
+                "height": "auto",
+                "margin-bottom": "0px",
+                "margin-right": "0px",
+                "max-height": "300px"
+            });
+        });
+    });
+</script>
+
 </html>
