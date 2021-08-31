@@ -24,13 +24,15 @@ sup {
 }
 
 body {
+    overflow: visible;
+    margin-top: 0px;
     line-height: 1.15!important;
     margin: 0;
     min-width: 320px;
     color: #444969;
     background: #f9f8f7;
     font-family: var(--fontfamily);
-    padding-bottom: 295px;
+    padding-bottom: 60px;
     min-height: 100%;
     box-sizing: border-box;
     position: relative;
@@ -57,7 +59,7 @@ body {
     padding: 0 25px;
     border-radius: 50px;
     border: 2px solid #3b4c85;
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     fill: #3b4c85;
 }
 
@@ -154,7 +156,7 @@ body {
     text-decoration: none;
     display: block;
     text-transform: uppercase;
-    font-family: 'Proxima Nova Semibold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     line-height: 22px;
 }
 
@@ -175,7 +177,7 @@ body {
 
 .icoListItem__title sup,
 sup {
-    font-family: 'Proxima Nova Semibold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-size: 9px;
     color: #fff;
     font-weight: 300;
@@ -253,7 +255,7 @@ sup.sup_is_airdrop {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     text-align: center;
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     color: #454a69;
 }
 
@@ -267,7 +269,7 @@ sup.sup_is_airdrop {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     text-align: center;
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     color: #454a69;
 }
 
@@ -283,7 +285,7 @@ sup.sup_is_airdrop {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     text-align: center;
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-size: 28px;
     color: #454a69;
 }
@@ -385,7 +387,7 @@ sup.sup_is_airdrop {
     color: #444969;
     text-transform: uppercase;
     line-height: 22px;
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
 }
 
 .icoTop__filters .filterItem {
@@ -445,7 +447,7 @@ sup.sup_is_airdrop {
     min-width: 140px;
     color: #444968;
     background: #fafafb;
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     box-shadow: rgba(0, 0, 0, .1) 0 3px 12px 0;
     width: 170px;
 }
@@ -544,7 +546,7 @@ sup.sup_is_airdrop {
     text-decoration: none;
     position: relative;
     margin-bottom: 10px;
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
 }
 
 .icoTop__sort2 {
@@ -815,6 +817,10 @@ sup.sup_is_airdrop {
 
 .jq-selectbox__dropdown .scroll-content {
     max-height: 300px;
+    height: auto;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    max-height: 0px;
 }
 
 .icoListItem_funded .icoListItem__end {
@@ -823,7 +829,7 @@ sup.sup_is_airdrop {
 }
 
 .icoListItem_funded .icoListItem__raised {
-    font-family: 'Proxima Nova Black', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-weight: 900;
     font-size: 26px;
     color: #454a69;
@@ -836,7 +842,7 @@ sup.sup_is_airdrop {
 }
 
 .icoListItem_funded .icoListItem__category span {
-    font-family: 'Proxima Nova Black', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-size: 13px;
     color: #636682;
     font-weight: 900;
@@ -1007,6 +1013,7 @@ a.item.event-item {
 .last-event-bottom-head .event-icon {
     height: 60px;
     min-width: 60px;
+    background-image: url('https://icoholder.com/media/cache/top_ico_thumb/files/img/8b0d25a4da0e93123e0e328585ade92f.jpeg');
 }
 
 .items .item.event-item .pic,
@@ -1117,6 +1124,10 @@ h3 {
     display: flex;
     flex-direction: row;
     height: 30px;
+}
+
+.event-list-filter-by-form {
+    margin-top: 50px;
 }
 
 .event-list-filter-by-form-lable {
@@ -1252,7 +1263,7 @@ button.btn-filters {
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
-    font-family: "Proxima Nova Black", "Open Sans", sans-serif;
+    font-family: var(--fontfamily);
 }
 
 .lookAlsoContent {
@@ -1346,7 +1357,7 @@ button.btn-filters {
     font-weight: 600;
     margin-bottom: 6px;
     text-transform: uppercase;
-    font-family: "Proxima Nova Semibold", "Open Sans", sans-serif;
+    font-family: var(--fontfamily);
 }
 
 .lookAlsoItem__text {
@@ -1356,7 +1367,7 @@ button.btn-filters {
     line-height: 19px;
     overflow: hidden;
     max-height: 76px;
-    font-family: "Proxima Nova", "Open Sans", sans-serif;
+    font-family: var(--fontfamily);
 }
 
 .swimm-panel-bottom {
@@ -1428,7 +1439,7 @@ button.btn-filters {
 .company-h1 h1 {
     font-weight: 700;
     display: inline-block;
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
 }
 
 .companyTitle_favorite {
@@ -1441,7 +1452,7 @@ button.btn-filters {
     color: #747794;
     margin-top: 5px;
     margin-left: 15px;
-    font-family: "Proxima Nova Semibold", 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     margin-bottom: 5px;
 }
 
@@ -1482,7 +1493,7 @@ button.btn-filters {
     text-decoration: none;
     color: #f3f5fc;
     background: #3b4c85;
-    font-family: 'Proxima Nova Semibold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
 }
 
 .swimm-panel-bottom__links .visitSite svg {
@@ -1508,7 +1519,7 @@ button.btn-filters {
     margin-bottom: -15px;
     position: relative;
     z-index: 1;
-    font-family: 'Proxima Nova Semibold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
 }
 
 .swimm-panel .add-bookmark .icon {
@@ -1606,7 +1617,7 @@ footer {
     font-weight: 700;
     line-height: 24px;
     margin-bottom: 5px;
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
 }
 
 .footerItem__list {
@@ -1641,7 +1652,7 @@ footer {
 }
 
 .footer-subscribe__title {
-    font-family: 'Proxima Nova Black', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-size: 22px;
     color: #445fbb;
     font-weight: 900;
@@ -1693,6 +1704,8 @@ footer {
 
 .footerItem__title_margin {
     margin-top: 10px;
+    margin-bottom: 0px;
+    line-height: 18px;
 }
 
 .bottomBanner {
@@ -1716,6 +1729,8 @@ footer {
     background-size: auto;
     background-size: contain;
     background-color: black;
+    top: 0px;
+    width: 100%;
 }
 
 .header-stats-bg {
@@ -1736,14 +1751,14 @@ footer {
 
 .header-stats__item {
     margin-right: 15px;
-    font-family: 'Proxima Nova Light', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-size: 12px;
     color: #97a9e3;
     font-weight: 300;
 }
 
 .header-stats__item strong {
-    font-family: 'Proxima Nova Black', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-weight: 900;
 }
 
@@ -1765,7 +1780,7 @@ footer {
 
 .header-stats-right a {
     text-decoration: none;
-    font-family: 'Proxima Nova Light', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-size: 13px;
     color: #c9d3f1;
     font-weight: 300;
@@ -1831,7 +1846,7 @@ footer {
     font-weight: 600;
     text-decoration: none;
     transition: none;
-    font-family: 'Proxima Nova bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     border-bottom: 1px solid #54649a;
     padding: 0;
 }
@@ -1847,7 +1862,7 @@ footer {
 
 .favoriteLink {
     color: #c8cce0;
-    font-family: "Proxima Nova bold", 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-size: 16px;
     font-weight: 600;
     line-height: 25px;
@@ -1878,7 +1893,7 @@ footer {
 }
 
 .search__input {
-    font-family: 'Proxima Nova Light', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     border: 1px solid #32406f;
     height: 34px;
     line-height: 29px;
@@ -2043,7 +2058,7 @@ footer {
 .ico-rating-overall {
     font-size: 70px;
     display: inline-block;
-    font-family: 'Proxima Nova Black', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     margin-bottom: 10px;
     padding: 10px 0;
     background: #f3f4f7;
@@ -2087,7 +2102,7 @@ footer {
     line-height: 94px;
     position: relative;
     color: #626584;
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-size: 16px;
 }
 
@@ -2108,7 +2123,7 @@ footer {
     font-weight: 900;
     font-size: 12px;
     color: #979abb;
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
 }
 
 .ico-rating__title,
@@ -2124,7 +2139,7 @@ footer {
 }
 
 .getWidget {
-    font-family: 'Proxima Nova Light', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-size: 14px;
     color: #626584;
     text-decoration: none;
@@ -2162,7 +2177,7 @@ footer {
     padding: 0 15px;
     font-size: 18px;
     color: #babccd;
-    font-family: "Proxima Nova Bold", 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     text-decoration: none;
     border-bottom: 3px solid transparent;
     display: block;
@@ -2172,7 +2187,7 @@ footer {
 }
 
 .swimm-menu li a sup {
-    font-family: 'Proxima Nova Light', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-size: 10px;
     color: #53b97c;
     font-weight: 300;
@@ -2216,7 +2231,7 @@ footer {
 }
 
 .icoinfo-block__title {
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-size: 20px;
     color: #3b4c86;
     font-weight: 700;
@@ -2237,7 +2252,7 @@ footer {
 }
 
 .icoinfo-block__item span {
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     font-size: 16px;
     color: #444968;
     font-weight: 700;
@@ -2291,7 +2306,7 @@ footer {
     padding: 10px 25px;
     border-radius: 100px;
     text-transform: uppercase;
-    font-family: 'Proxima Nova Bold', 'Open Sans', sans-serif;
+    font-family: var(--fontfamily);
     display: inline-block;
     box-sizing: border-box;
     border: 2px solid #3b4c86;
@@ -2328,4 +2343,460 @@ footer {
     min-width: 190px;
     padding: 0 1.9286em;
     width: 100%;
+}
+
+.airdrop {
+    padding: 0 20px;
+}
+
+.airdrop-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.airdrop-top__item {
+    text-align: center;
+    font-family: var(--fontfamily);
+    font-size: 14px;
+    color: #989dc0;
+    font-weight: 300;
+}
+
+.airdrop-top__number {
+    font-family: var(--fontfamily);
+    font-size: 20px;
+    color: #444969;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.airdrop h2 {
+    font-size: 30px;
+    font-family: var(--fontfamily);
+    font-weight: 900;
+    color: #444969;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.airdrop p {
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #444969;
+    margin-top: 15px;
+}
+
+.airdrop-steps {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.airdrop-steps:before {
+    content: '';
+    border-left: 2px dotted #ccd1e0;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 5px;
+    height: calc(100% - 8px);
+}
+
+.airdrop-steps__item {
+    font-family: var(--fontfamily);
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 27px;
+    position: relative;
+    color: #444969;
+    margin-bottom: 15px;
+}
+
+.airdrop-steps__item:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #3b4c86;
+}
+
+.airdrop-steps__item a {
+    text-decoration: none;
+    color: #748bd9;
+}
+
+.requirements {
+    margin-top: 10px;
+}
+
+.requirements__item {
+    font-family: var(--fontfamily);
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.airdrop-top__btn {
+    border-radius: 25px;
+    background: #4bb665;
+    font-family: var(--fontfamily);
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 25px;
+    height: 40px;
+    line-height: 44px;
+    text-align: center;
+    border-bottom: 3px solid #358e4a;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.airdrop-top__btn:hover {
+    background: #4d9960;
+    color: #fff;
+    text-decoration: none;
+}
+
+.milestones,
+.milestones-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.milestones__item:nth-child(2n+1) {
+    margin-right: 0;
+    margin-left: -50%;
+    padding-left: 0;
+    padding-right: 25px;
+    border-left: none;
+    border-right: 2px dotted #ccd1e0;
+}
+
+.milestones__item {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -49.7%;
+    padding-left: 25px;
+    box-sizing: border-box;
+    border-left: 2px dotted #ccd1e0;
+    position: relative;
+}
+
+.milestones__item:nth-child(2n+1):before {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+    margin-right: -10px;
+}
+
+.milestones__item:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f9f8f7;
+    background: #3b4c86;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+.milestones__item:nth-child(2n+1) .milestones__date {
+    text-align: right;
+}
+
+.milestones__date {
+    font-size: 18px;
+    color: #3b4c86;
+    margin-bottom: 5px;
+    margin-top: 3px;
+    font-family: var(--fontfamily);
+    font-weight: 900;
+}
+
+.milestones-content {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background: #f3f4f7;
+    border-bottom: 3px solid #edeff4;
+}
+
+.milestones__text {
+    font-size: 15px;
+    color: #30374e;
+    font-weight: 300;
+    line-height: 24px;
+    font-family: var(--fontfamily);
+}
+
+.company-team__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2.5%;
+    margin-bottom: 20px;
+    width: 22%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    min-height: 116px;
+    border: 3px solid #edeff4;
+}
+
+.company-team__title {
+    font-size: 16px;
+    color: #444969;
+    font-weight: bolder;
+    font-family: var(--fontfamily);
+}
+
+.company-team__post {
+    font-size: 12px;
+    color: #7c809e;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.company-team__links {
+    padding-top: 14px;
+}
+
+.company-team__links a {
+    max-width: 25px;
+    margin: 0 7px;
+    display: inline-block;
+}
+
+.widget {
+    text-align: center;
+}
+
+.widget__img {
+    margin-bottom: 20px;
+}
+
+.widget_h.active {
+    opacity: 1;
+    height: auto;
+}
+
+.widget_h {
+    opacity: 0;
+    transition: opacity 1s;
+    height: 0;
+    overflow: hidden;
+}
+
+.widget_s {
+    opacity: 0;
+    transition: opacity 1s;
+    height: 0;
+    overflow: hidden;
+}
+
+.widget__format {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    color: #989cb7;
+}
+
+.widget__format a.active {
+    color: #3b4c85;
+}
+
+.widget__format a {
+    color: #989cb7;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.widget__switch {
+    display: inline-block;
+    vertical-align: middle;
+    width: 57px;
+    height: 22px;
+    background: #e4e6ed;
+    border-radius: 25px;
+    margin: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.widget__switch span {
+    background: #3b4c85;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: left .25s;
+}
+
+.widget__size {
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    color: #989cb7;
+    text-align: center;
+}
+
+.widget__size-title {
+    margin-bottom: 20px;
+}
+
+.widget .ui-slider {
+    width: 400px;
+    max-width: 90%;
+    margin: 10px auto;
+    height: 2px;
+    background: #c6cbde;
+}
+
+.ui-slider-horizontal {
+    height: .8em;
+}
+
+.ui-slider {
+    position: relative;
+    text-align: left;
+}
+
+.widget .ui-slider-range {
+    background: #3b4c85;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+}
+
+.widget .ui-slider-handle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #3b4c85;
+    outline: none;
+    top: -7px;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 18px;
+    height: 18px;
+    cursor: default;
+    touch-action: none;
+}
+
+.widget__size .wsi {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+.widget__copy {
+    margin-top: 30px;
+}
+
+.widget__copy-title {
+    text-align: center;
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    color: #444968;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.widget__copy-content {
+    background: #ebebee;
+    width: 850px;
+    max-width: 100%;
+    resize: none;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    color: #444968;
+    min-height: 85px;
+    line-height: 120%;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.scroll-wrapper {
+    position: relative;
+}
+
+.jq-selectbox__dropdown {
+    display: none;
+    width: 213.297px;
+}
+
+.scroll-content li {
+    display: none;
+}
+
+.timer {
+    font-size: 22px;
+}
+
+.icoTop .jq-selectbox.opened {
+    background: #fff;
+    color: #6c7285;
+    border-radius: 5px 5px 0 0;
+}
+
+.last-event-top {
+    background-image: url(https://icoholder.com/media/cache/event_background_list/files/img/ccc9b2e83f822db416b0a171d81effec.jpeg);
+}
+
+a.promotion {
+    color: #ffe599;
+}
+
+a.nft {
+    display: block;
+    padding: 4px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    -webkit-appearance: normal;
+    word-wrap: break-word;
+    color: #004b23;
+    background-color: #70e000;
 }
