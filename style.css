@@ -2912,3 +2912,98 @@ a.youtube {
     height: auto;
     overflow: hidden;
 }
+
+
+/* Login Form */
+
+.login {
+    background: #3b4c86;
+    display: flex;
+}
+
+.sign-in-container form span {
+    font-size: 14px;
+}
+
+.sign-in-container form a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.sign-in-container form button {
+    border-radius: 20px;
+    border: 1px solid #3b4c86;
+    background-color: #3b4c86;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 55px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.sign-in-container form button:active {
+    transform: scale(0.95);
+}
+
+.sign-in-container form button:focus {
+    outline: none;
+}
+
+.sign-in-container form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.sign-in-container input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.sign-in-container {
+    width: 100%;
+    border-radius: 10px;
+    z-index: 2;
+    background-color: #fff;
+    padding: 50px 0px 50px 0px;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.social-container {
+    margin: 20px 0;
+}
+
+.social-container a {
+    border: 1px solid #3b4c86;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.social-container a i {
+    color: #3b4c86;
+}
+
+.sign-in-container form h1 {
+    color: #3b4c86;
+    font-weight: bold;
+    margin: 0;
+}
